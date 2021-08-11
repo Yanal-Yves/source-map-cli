@@ -42,7 +42,6 @@ export class SourceMapService {
       url: sourceMapFilePath,
     })
       .then((res) => {
-        console.log(res.status);
         onfulfilled(res);
       })
       .catch((err) => {
