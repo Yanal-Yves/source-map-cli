@@ -1,13 +1,16 @@
 {
   "author": "Yanal-Yves FARGIALLA",
   "bin": {
-    "source-map": "./lib/index.js"
+    "source-map": "./dist/index.js"
   },
   "dependencies": {
     "chalk": "^4.1.2",
     "clear": "^0.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "figlet": "^1.5.0",
     "path": "^0.12.7",
+    "prettier": "^2.3.2",
     "source-map": "^0.7.3",
     "yargs": "^17.1.0"
   },
@@ -15,6 +18,9 @@
   "devDependencies": {
     "@types/node": "^16.4.13",
     "@types/yargs": "^17.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
+    "eslint": "^7.32.0",
     "nodemon": "^2.0.12",
     "ts-node": "^10.2.0",
     "typescript": "^4.3.5"
@@ -24,14 +30,18 @@
     "typescript"
   ],
   "license": "GPL",
-  "main": "./lib/index.js",
-  "name": "source-map-cli",
+  "main": "./dist/index.js",
+  "name": "@yanal-yves/source-map-cli",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yanal-Yves/source-map-cli"
+  },
   "scripts": {
     "build": "tsc -p .",
     "create": "npm run build && npm run test",
     "local": "sudo npm i -g && pizza",
     "refresh": "rm -rf ./node_modules ./package-lock.json && npm install",
-    "start": "nodemon --watch src --exec ./node_modules/.bin/ts-node src/index.ts",
+    "start": "nodemon --watch src --exec ./node_modules/.bin/ts-node src/cli.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "version": "0.0.1"
