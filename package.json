@@ -1,13 +1,11 @@
 {
   "author": "Yanal-Yves FARGIALLA",
   "bin": {
-    "source-map": "./dist/index.js"
+    "source-map": "./dist/cli.js"
   },
   "dependencies": {
     "chalk": "^4.1.2",
     "clear": "^0.1.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
     "figlet": "^1.5.0",
     "path": "^0.12.7",
     "prettier": "^2.3.2",
@@ -21,16 +19,21 @@
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
     "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "nodemon": "^2.0.12",
     "ts-node": "^10.2.0",
     "typescript": "^4.3.5"
   },
+  "files": [
+    "dist/**"
+  ],
   "keywords": [
     "source-map",
     "typescript"
   ],
   "license": "GPL",
-  "main": "./dist/index.js",
+  "main": "./dist/cli.js",
   "name": "@yanal-yves/source-map-cli",
   "repository": {
     "type": "git",
