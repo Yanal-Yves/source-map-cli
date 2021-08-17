@@ -9,7 +9,7 @@ console.log(chalk.red(figlet.textSync('source-map', { horizontalLayout: 'full' }
 const yargs = require('yargs');
 yargs
   .scriptName('source-map-cli')
-  .usage('Usage: $0 -s <source-maps-folder>')
+  .usage('Usage: $0 -s <source-maps-folder|url-to-source-map>')
   .command(
     ['originalPositionFor <position>'],
     'Find original position for the specified generated position',

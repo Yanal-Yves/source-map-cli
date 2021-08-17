@@ -9,7 +9,7 @@ npm install -g @yanal-yves/source-map-cli
 ## How to usse ?
 
 ```bash
-source-map -s <URL_where_to_source_maps_|_Local_path_to_source_maps> originalPositionFor <javascript_file_name>:<line_number>:<column_number>
+source-map -s <URL_to_source_maps|_Local_path_to_source_maps> originalPositionFor <javascript_file_name>:<line_number>:<column_number>
 ```
 
 ## How to hack ?
@@ -17,7 +17,7 @@ source-map -s <URL_where_to_source_maps_|_Local_path_to_source_maps> originalPos
 ### Test the cli locally
 
 ```bash
-npm run start -- --s <URL_where_to_source_maps_|_Local_path_to_source_maps> originalPositionFor <javascript_file_name>:<line_number>:<column_number>
+npm run start -- --s <URL_to_source_maps|_Local_path_to_source_maps> originalPositionFor <javascript_file_name>:<line_number>:<column_number>
 ```
 
 ### Test to pack and install the cli locally
